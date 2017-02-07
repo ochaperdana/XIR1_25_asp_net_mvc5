@@ -29,5 +29,7 @@ namespace XIR1_25_asp_net_mvc3.Models.DB
         public virtual DbSet<SYSUser> SYSUsers { get; set; }
         public virtual DbSet<SYSUserProfile> SYSUserProfiles { get; set; }
         public virtual DbSet<SYSUserRole> SYSUserRoles { get; set; }
+
+        public System.Data.Entity.DbSet<XIR1_25_asp_net_mvc3.Models.ViewModel.UserProfileView> UserProfileViews { get; set; }
     }
 }
