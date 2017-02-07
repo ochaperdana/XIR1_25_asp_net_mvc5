@@ -18,7 +18,7 @@ namespace XIR1_25_asp_net_mvc3.Security
         protected override bool AuthorizeCore(HttpContextBase httpContext)
         {
             bool authorize = false;
-            using (TryDBEntities db = new TryDBEntities())
+            using (DemoDBEntities db = new DemoDBEntities())
             {
                 UserManager UM = new UserManager();
                 foreach (var roles in userAssignedRoles)

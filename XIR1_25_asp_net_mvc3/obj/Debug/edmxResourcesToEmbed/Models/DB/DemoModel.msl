@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="TryDBModelStoreContainer" CdmEntityContainer="TryDBEntities">
+  <EntityContainerMapping StorageEntityContainer="DemoDBModelStoreContainer" CdmEntityContainer="DemoDBEntities">
     <EntitySetMapping Name="LOOKUPRoles">
-      <EntityTypeMapping TypeName="TryDBModel.LOOKUPRole">
+      <EntityTypeMapping TypeName="DemoDBModel.LOOKUPRole">
         <MappingFragment StoreEntitySet="LOOKUPRole">
           <ScalarProperty Name="LOOKUPRoleID" ColumnName="LOOKUPRoleID" />
           <ScalarProperty Name="RoleName" ColumnName="RoleName" />
@@ -15,7 +15,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="SYSUsers">
-      <EntityTypeMapping TypeName="TryDBModel.SYSUser">
+      <EntityTypeMapping TypeName="DemoDBModel.SYSUser">
         <MappingFragment StoreEntitySet="SYSUser">
           <ScalarProperty Name="SYSUserID" ColumnName="SYSUserID" />
           <ScalarProperty Name="LoginName" ColumnName="LoginName" />
@@ -28,7 +28,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="SYSUserProfiles">
-      <EntityTypeMapping TypeName="TryDBModel.SYSUserProfile">
+      <EntityTypeMapping TypeName="DemoDBModel.SYSUserProfile">
         <MappingFragment StoreEntitySet="SYSUserProfile">
           <ScalarProperty Name="SYSUserProfileID" ColumnName="SYSUserProfileID" />
           <ScalarProperty Name="SYSUserID" ColumnName="SYSUserID" />
@@ -43,7 +43,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="SYSUserRoles">
-      <EntityTypeMapping TypeName="TryDBModel.SYSUserRole">
+      <EntityTypeMapping TypeName="DemoDBModel.SYSUserRole">
         <MappingFragment StoreEntitySet="SYSUserRole">
           <ScalarProperty Name="SYSUserRoleID" ColumnName="SYSUserRoleID" />
           <ScalarProperty Name="SYSUserID" ColumnName="SYSUserID" />

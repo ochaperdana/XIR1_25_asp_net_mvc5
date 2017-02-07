@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'D:\SEKOLAH 1.1\TUGAS\Desktop\ASP.NET\XIR1_25_asp_net_mvc3\XIR1_25_asp_net_mvc3\Models\DB\DemoModel.edmx'. 
+﻿// T4 code generation is enabled for model 'D:\SEKOLAH 1.1\TUGAS\Desktop\ASP.NET\XIR1_25_asp_net_mvc4\XIR1_25_asp_net_mvc3\XIR1_25_asp_net_mvc3\Models\DB\DemoModel.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

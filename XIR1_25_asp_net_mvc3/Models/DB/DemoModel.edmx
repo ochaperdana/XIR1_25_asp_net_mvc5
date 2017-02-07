@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="TryDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="DemoDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="LOOKUPRole">
           <Key>
             <PropertyRef Name="LOOKUPRoleID" />
@@ -92,7 +92,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="TryDBModelStoreContainer">
+        <EntityContainer Name="DemoDBModelStoreContainer">
           <EntitySet Name="LOOKUPRole" EntityType="Self.LOOKUPRole" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="SYSUser" EntityType="Self.SYSUser" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="SYSUserProfile" EntityType="Self.SYSUserProfile" Schema="dbo" store:Type="Tables" />
@@ -114,7 +114,7 @@
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="TryDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="DemoDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="LOOKUPRole">
           <Key>
             <PropertyRef Name="LOOKUPRoleID" />
@@ -208,7 +208,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="TryDBEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="DemoDBEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="LOOKUPRoles" EntityType="Self.LOOKUPRole" />
           <EntitySet Name="SYSUsers" EntityType="Self.SYSUser" />
           <EntitySet Name="SYSUserProfiles" EntityType="Self.SYSUserProfile" />
@@ -231,9 +231,9 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="TryDBModelStoreContainer" CdmEntityContainer="TryDBEntities">
+        <EntityContainerMapping StorageEntityContainer="DemoDBModelStoreContainer" CdmEntityContainer="DemoDBEntities">
           <EntitySetMapping Name="LOOKUPRoles">
-            <EntityTypeMapping TypeName="TryDBModel.LOOKUPRole">
+            <EntityTypeMapping TypeName="DemoDBModel.LOOKUPRole">
               <MappingFragment StoreEntitySet="LOOKUPRole">
                 <ScalarProperty Name="LOOKUPRoleID" ColumnName="LOOKUPRoleID" />
                 <ScalarProperty Name="RoleName" ColumnName="RoleName" />
@@ -246,7 +246,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="SYSUsers">
-            <EntityTypeMapping TypeName="TryDBModel.SYSUser">
+            <EntityTypeMapping TypeName="DemoDBModel.SYSUser">
               <MappingFragment StoreEntitySet="SYSUser">
                 <ScalarProperty Name="SYSUserID" ColumnName="SYSUserID" />
                 <ScalarProperty Name="LoginName" ColumnName="LoginName" />
@@ -259,7 +259,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="SYSUserProfiles">
-            <EntityTypeMapping TypeName="TryDBModel.SYSUserProfile">
+            <EntityTypeMapping TypeName="DemoDBModel.SYSUserProfile">
               <MappingFragment StoreEntitySet="SYSUserProfile">
                 <ScalarProperty Name="SYSUserProfileID" ColumnName="SYSUserProfileID" />
                 <ScalarProperty Name="SYSUserID" ColumnName="SYSUserID" />
@@ -274,7 +274,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="SYSUserRoles">
-            <EntityTypeMapping TypeName="TryDBModel.SYSUserRole">
+            <EntityTypeMapping TypeName="DemoDBModel.SYSUserRole">
               <MappingFragment StoreEntitySet="SYSUserRole">
                 <ScalarProperty Name="SYSUserRoleID" ColumnName="SYSUserRoleID" />
                 <ScalarProperty Name="SYSUserID" ColumnName="SYSUserID" />
